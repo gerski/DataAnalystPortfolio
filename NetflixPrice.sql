@@ -74,7 +74,7 @@ Where [No# of Movies] = (Select Min([No# of Movies]) From [Portfolio Project]..[
 
 Select AVG([Cost Per Month - Basic ($)])
 From [Portfolio Project]..['netflix price in different coun$']
-
+-- cheap or expensive
 Select Country,
 CASE 
 	WHEN ([Cost Per Month - Basic ($)] > 8.00  ) THEN 'expensive'
